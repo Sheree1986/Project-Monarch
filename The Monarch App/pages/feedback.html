@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Feedback</title>
+    <link href="../css/style.css"rel="stylesheet" type="text/css" />
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+
+
+</head>
+
+
+
+
+
+
+    <header>
+  
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="../Index.html"  target="_blank">Home Page</a>
+      </li>
+      <li>
+        <a href="../pages/monarchtales.html"  target="_blank">Monarch Tales</a>
+      </li>
+      <li>
+        <a href="../pages/monarchtrails.html" target="_blank">Monarch Trails</a>
+      </li>
+      <li>
+        <a href="#projects">Feedback Form</a>
+      </li>
+    </ul>
+  </nav>
+  
+  </header>
+  
+  <section id="welcome-section" class="welcome-section2">
+    <h1>Not to leave Arya's dad out of the fun....</h1>
+    <p>Please click the button below to to read some dad jokes.</p>
+    <button class="click">Click Here for a joke</button>
+    <div id="jokes">
+    
+    </div>
+  </section>
+ 
+  <section id="projects2" class="projects-section2">
+    <h2 class="projects-section2"></h2>
+  
+  <div class="projects-grid2">
+      <a class="project project-tile">
+        <script>
+        function sendEmail() {
+            Email.send({
+            SecureToken : "<adfc6773-b50a-4bab-9204-56fb9e820e2e>",
+            To : '<whom you want to send>',
+            From : "<sheree.edmund1@gmail.com>",
+            Subject: "Sending Email using javascript with SMTPJS",
+            Body: "If you are reading this, don't forget to applaud Sheree",
+            Attachments: [{
+            name: "File_Name_with_Extension",
+            path: "Full Path of the file"
+            }]
+            })
+            .then(function (message) {
+            alert("Mail has been sent successfully")
+            });
+            }
+        </script>
+        <p class="project-title">
+          <strong>
+         Feedback Form
+          </strong>
+          <form method="post">
+            
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <tr> <td>
+            <label for="Name">Name:</label>
+            </td> <td>
+            <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px; color;black;" />
+            </td> </tr> <tr> <td>
+            <label for="Comments">Comments*:</label>
+            </td> <td>
+            <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+            </td> </tr> <tr> <td>
+          
+            </td> <td>
+            <div style="float:right"></a></div>
+            <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript"></script>
+            </td> </tr>
+            </table>
+            <input type="button" value="Send Email"
+            onclick="sendEmail()">
+            </form>
+           
+        
+         
+        </p>
+        <h1>Thank you for your feedback!</h1>
+      </a>
+    
+     
+      </div>
+  </section>
+  
+ 
+   
+   
+
+<body>
+	
+  
+  <script src="../js/script.js"></script>
+  
+</body>
+
+</html>
